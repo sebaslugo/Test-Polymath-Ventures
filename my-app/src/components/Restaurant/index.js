@@ -17,7 +17,7 @@ export default function Restaurants() {
       >
         New
       </Button>
-      {data && <ListRestaurant restaurants={data} />}
+      {data && data.length && <ListRestaurant restaurants={data} />}
       <NewRestaurant show={show} handleClose={() => setShow(false)} />
     </div>
   );

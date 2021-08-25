@@ -6,5 +6,5 @@ import React from "react";
 export default function Restaurants() {
   const { data } = useQuery(["allBooking"], get_booking);
 
-  return <div>{data && <List bookings={data} />}</div>;
+  return <div>{data && data.length && <List bookings={data} />}</div>;
 }
